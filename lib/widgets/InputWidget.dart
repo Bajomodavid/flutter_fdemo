@@ -5,6 +5,10 @@ class InputWidget extends StatelessWidget {
 
   final TextEditingController textEditingController = new TextEditingController();
 
+  sendIt() {
+
+  }
+  
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -14,6 +18,7 @@ class InputWidget extends StatelessWidget {
             child: new Container(
               margin: new EdgeInsets.symmetric(horizontal: 1.0),
               child: new IconButton(
+                onPressed: sendIt,
                 icon: new Icon(Icons.face),
                 color: Palette.primaryColor,
               ),
